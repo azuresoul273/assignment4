@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakshi Vaity</title>
+</head>
+<body>
+
+ <h1>4<sup>th</sup> Assignment</h1>
+  
+  <script>
+
+class company
+{
+    constructor(compname,country,ceo)
+    {
+        this.compname=compname;
+        this.country=country;
+        this.ceo=ceo;
+    }
+    getCarname()
+    {
+        return this.compname;
+    }
+}
+
+class car extends company
+{
+    constructor(carname,compname,country,ceo,established,group)
+    {
+        super(compname,country,ceo);
+        this.established=established;
+        this.carname=carname;
+        this.group=group;
+
+    }
+    getModel()
+    {
+        return this.carname;
+    }
+}
+
+let Car1=new car('Audi R8','AUDI AG','Germany','Markus Duesmann','2006','Volkswagen');
+ console.log(Car1.getModel());
+
+let Car2=new car('Ferrari 488','Ferrari','Maranello, Italy','John Elkann','2015','Exor');
+ console.log(Car2.getModel());
+
+let Car3=new car('Lamborghini Huracan','Automobili Lamborghini S.p.A','Italy','Stephan Winkelmann','1963','Volkswagen');
+ console.log(Car3.getModel());
+
+let Car4=new car('Rolls-Royce Cullinan',' Rolls-Royce automobiles','Manchester,United Kingdom','Warren East','2011','Bayerische Motoren Werke AG');
+ console.log(Car4.getModel());
+
+let Car5=new car('Porsche 911','Porsche ','Germany','Oliver Blume',' 1964','Volkswagen');
+ console.log(Car5.getModel());
+ 
+let Car6=new car('Tesla Model 3','Tesla',' San Carlos, California, United States','Elon Musk ','2003','SolarCity, Maxwell Technologies');
+ console.log(Car6.getModel());
+
+  </script>
+
+</body>
+</html>
